@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,10 +14,15 @@
     "express": "^4.17.1",
     "jest": "^26.6.1"
   },
+  "jest": {
+    "collectCoverage": true
+  },
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jlightheart24/note-taker.git"
